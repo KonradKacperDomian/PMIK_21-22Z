@@ -98,9 +98,9 @@ void MoveAR3603HB(int angle, int ServoNumber, int FLAG)
 		if(FLAG == 0)
 		{
 			__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_1, 1400);
-			HAL_Delay((TIME_IN_MS_TO_ANGLE_60/60)*angle);
+			TIMER((TIME_IN_MS_TO_ANGLE_60/60)*angle);
 			__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_1, 0);
-			HAL_Delay(10);
+			TIMER(10);
 		}
 		else
 		{
@@ -118,9 +118,9 @@ void MoveAR3603HB(int angle, int ServoNumber, int FLAG)
 			if(FLAG == 0)
 			{
 				__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_2, 1400);
-				HAL_Delay((TIME_IN_MS_TO_ANGLE_60/60)*angle);
+				TIMER((TIME_IN_MS_TO_ANGLE_60/60)*angle);
 				__HAL_TIM_SET_COMPARE(&TIM_NO, TIM_CH_2, 0);
-				HAL_Delay(10);
+				TIMER(10);
 			}
 			else
 			{

@@ -32,6 +32,10 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "main.h"
+#include "vl53l1_api.h"
+#include "X-NUCLEO-53L1A1.h"
+#include "AR-3603HB_api.h"
 
 /* USER CODE END Includes */
 
